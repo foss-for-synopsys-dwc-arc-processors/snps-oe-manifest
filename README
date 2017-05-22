@@ -1,0 +1,30 @@
+Synopsys Manifest
+=================
+
+This Manifest file is a manifest to synchronize all the layers needed
+by Synopsys' layer, using "repo" tool.
+
+Here are the commands to retreive the last revision:
+
+Install
+-------
+
+The repo tool needed to be installed in your laptop. Install it with (as root):
+	# curl https://storage.googleapis.com/git-repo-downloads/repo > /usr/bin/repo
+	# chmod +x /usr/bin/repo
+
+Use
+---
+
+Once the repo tool is available, we need to initialize it using our manifest:
+	$ repo init -u https://github.com/foss-for-synopsys-dwc-arc-processors/synopsys-oe-manifest.git
+	$ repo sync -j3
+
+If you want a specific revision (such as "morty"), use the init command with "-b" option:
+	$ repo init -b morty -u https://github.com/foss-for-synopsys-dwc-arc-processors/synopsys-oe-manifest.git
+
+You can update at any time the sources using:
+	$ repo sync -j3
+
+For information about repo, see the Android source website:
+    https://source.android.com/source/using-repo
