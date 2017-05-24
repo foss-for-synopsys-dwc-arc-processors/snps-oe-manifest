@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<remote name="oe" fetch="git://git.openembedded.org/" />
-	<remote name="synopsys" fetch="git://github.com/foss-for-synopsys-dwc-arc-processors/" />
+	<remote name="oe" fetch="http://git.openembedded.org/" />
+	<remote name="synopsys" fetch="http://github.com/foss-for-synopsys-dwc-arc-processors/" />
 
 	<default revision="morty" remote="synopsys" />
 
