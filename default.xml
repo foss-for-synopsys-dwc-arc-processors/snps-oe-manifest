@@ -3,10 +3,9 @@
 	<remote name="oe" fetch="http://git.openembedded.org/" />
 	<remote name="synopsys" fetch="http://github.com/foss-for-synopsys-dwc-arc-processors/" />
 
-	<default revision="morty" remote="synopsys" />
+	<default revision="pyro" remote="synopsys" />
 
-	<project path="oe" name="synopsys-oe-core" remote="synopsys" />
-	<project path="oe/bitbake" name="bitbake" remote="oe" revision="1.32" />
-	<project path="meta-openembedded" name="meta-openembedded" remote="oe" revision="morty" />
-	<project name="meta-synopsys" remote="synopsys" />
+	<project path="oe" name="synopsys-oe-core" />
+	<project path="oe/bitbake" name="bitbake" remote="oe" revision="1.36" />
+	<project name="meta-synopsys" revision="glibc" />
 </manifest>
